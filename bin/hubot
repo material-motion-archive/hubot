@@ -23,5 +23,9 @@ if [ -f "$config_file" ]; then
   . "$config_file"
 fi
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"; pushd $DIR >> /dev/null
+
+cd $DIR
+
 export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
 exec node_modules/.bin/hubot --name "hubot" -a discord
