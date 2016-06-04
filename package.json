@@ -4,7 +4,7 @@
   "private": true,
   "author": "featherless+material@google.com",
   "description": "beepboop",
-  "main": "node_modules/.bin/hubot",
+  "main": "bin/hubot",
   "dependencies": {
     "hubot-help": "~0.2.0",
     "hubot-diagnostics": "0.0.1",
